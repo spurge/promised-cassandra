@@ -1,6 +1,6 @@
 {
   "name": "promised-cassandra",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Q promise wrapper for Datastax Cassandra driver",
   "main": "index.js",
   "directories": {
