@@ -2,8 +2,18 @@ const expect = require('chai').expect;
 const db = (require('..'))();
 
 describe('Database proxy', () => {
-	it('execute function', () => {
+	it('execute function without params', () => {
 		return db.execute('select key from system.local')
+		.then(res => {
+			expect(res.first()['key']).to.equal('local');
+		});
+	});
+
+	it('execute function with params', () => {
+		return db.execute(
+			'select key from system.local where key = ?',
+			['local']
+		)
 		.then(res => {
 			expect(res.first()['key']).to.equal('local');
 		});
