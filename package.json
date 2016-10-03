@@ -1,0 +1,38 @@
+{
+  "name": "promised-cassandra",
+  "version": "1.0.0",
+  "description": "Q promise wrapper for Datastax Cassandra driver",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/spurge/promised-cassandra.git"
+  },
+  "keywords": [
+    "cassandra",
+    "q",
+    "promise",
+    "database",
+    "storage"
+  ],
+  "author": "spurge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spurge/promised-cassandra/issues"
+  },
+  "homepage": "https://github.com/spurge/promised-cassandra#readme",
+  "dependencies": {
+    "lodash": "^4.16.2",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "cassandra-driver": "^3.1.4",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
+}
