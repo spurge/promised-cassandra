@@ -33,6 +33,8 @@ const cassandra = require('promised-cassandra');
 const database = cassandra({
     contactPoints: ['127.0.0.1']
 });
+// or if your options comes from a promise
+const database = cassandra(some_promise_that_resolves_an_options_object);
 
 // Execute some CQL
 database.execute(

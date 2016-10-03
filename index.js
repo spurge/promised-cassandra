@@ -52,8 +52,9 @@ class Client {
 			return this._connection;
 		}
 
-		return this._connection = q.try(() => (
-			new cassandra.Client(this.options)
+		return this._connection = q(this.options)
+		.then(options => (
+			new cassandra.Client(options)
 		));
 	}
 
