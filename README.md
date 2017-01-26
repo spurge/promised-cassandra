@@ -1,5 +1,6 @@
 Promised Cassandra
 ==================
+[![Build Status](https://semaphoreci.com/api/v1/spurge/promised-cassandra/branches/master/shields_badge.svg)](https://semaphoreci.com/spurge/promised-cassandra)
 
 Q promise wrapper for [Datastax Cassandra driver](https://github.com/datastax/nodejs-driver)
 
